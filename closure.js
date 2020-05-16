@@ -18,3 +18,21 @@ var x = foo();
 x(); // 0
 x(); // 1
 x(); // 2
+
+/*
+    This example of closure should not go together with functional programming, it has effect, cound is getting changed. But closure is very useful
+    with currying or partial application.
+*/
+
+function sumX(x) {
+    return function (y) {
+        return x + y;
+    };
+}
+
+var add10 = sum(10);
+
+add10(3); // 13;
+add10(14); // 24
+
+// use of closure and functional approach, no side effects
