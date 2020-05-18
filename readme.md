@@ -9,3 +9,5 @@ assignments are by VALUE copy
 
 non primitives are held by reference
 assignment are by REFERENCE copy
+
+Argument is what is passed in, parameter is what receives it. Arguments are assigned to parameters.
